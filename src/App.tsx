@@ -99,6 +99,10 @@ function App() {
                     }}>Sıfırla</Button>
                 </Modal.Footer>
             </Modal>
+
+            <div className="position-absolute top-100 start-50 translate-middle">
+                2023 <a href="https://www.linkedin.com/in/yagizsenal">Yağız Şenal</a>
+            </div>
         </Container>
     );
 }
