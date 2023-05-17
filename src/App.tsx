@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react';
-import {Button, Container, Image, Modal, Stack} from "react-bootstrap";
+import {Button, Col, Container, Image, Modal, Row, Stack} from "react-bootstrap";
 
 const KEY_ERDOGAN = "erdogan"
 const KEY_KILICDAROGLU = "kilicdaroglu"
@@ -81,6 +81,16 @@ function App() {
                                    onDecreaseVoteCount={() => decrease(kilicdarogluCountState, KEY_KILICDAROGLU, setKilicdarogluCountState)}
                     />
                 </Stack>
+                <Container>
+                    <Row>
+                        <Col>
+                            <h3 className="text-start">Toplam</h3>
+                        </Col>
+                        <Col>
+                            <h3 className="text-end">{erdoganCountState + kilicdarogluCountState}</h3>
+                        </Col>
+                    </Row>
+                </Container>
                 <Button variant="danger" onClick={showResetConfirmation}>Sıfırla</Button>
             </Stack>
 
